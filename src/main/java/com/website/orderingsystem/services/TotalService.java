@@ -4,19 +4,18 @@ import com.website.orderingsystem.entities.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
-public class totalService {
+@Service // REGISTER COMPONENTS
+public class TotalService {
 
-    @Autowired
+    @Autowired // DEPENDENCY INJECTION
     private OrderService orderService;
 
-    @Autowired
+    @Autowired // DEPENDENCY INJECTION
     private ShippingService shippingService;
-
 
     public double orderTotal(Order order) {
         return orderService.calculateDiscount(order.getBasic(), order.getDiscount())
-                - shippingService.freightCost(order.getBasic());
+                + shippingService.freightCost(order.getBasic());
 
     }
 

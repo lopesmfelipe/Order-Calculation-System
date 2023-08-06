@@ -1,12 +1,11 @@
 package com.website.orderingsystem.entities;
 
-public class Order {
+public class Order {  // ENTITY
     private int code;
     private double basicValue;
     private double discount;
 
     public Order(){
-
     }
 
     public Order(int code, double basic, double discount){

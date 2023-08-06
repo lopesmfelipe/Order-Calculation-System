@@ -2,7 +2,7 @@ package com.website.orderingsystem.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service // REGISTER COMPONENTS
 public class OrderService {
 
     public double calculateDiscount(double basicValue, double discount) {

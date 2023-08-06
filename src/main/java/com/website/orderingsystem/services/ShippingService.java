@@ -2,7 +2,7 @@ package com.website.orderingsystem.services;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service // REGISTER COMPONENTS
 public class ShippingService {
 
     public double freightCost(double basicValue){
