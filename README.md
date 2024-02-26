@@ -1,4 +1,4 @@
-# Order Calculation System!
+# Order Calculation System
 
 ## An Order Calculation System using Spring Boot(Java framework) !
 
